@@ -1,0 +1,55 @@
+NODE *SORTING(NODE *head)
+{
+	int back,i;
+    NODE *p,*p1,*p2,*p3;
+    NODE h, t;
+    if (head == NULL) return NULL;
+    h.next=head;
+    p=&h;                                        
+    while (p->next!=NULL)
+    {
+        p=p->next;
+    }
+    p=p->next=&t;
+    while (p!=h.next)
+    {
+        p3=&h;
+        p1=p3->next;
+        p2=p1->next;
+        while (p2!=p)                         
+        {
+            if ((p1->id)>(p2->id))
+            {                                   
+                p1->next=p2->next;
+                p2->next=p1;
+                p3->next=p2;
+                p3=p2;                                
+                p2=p1->next;
+            } 
+            else 
+	    {
+                p3=p1;
+                p1=p2;
+                p2=p2->next;
+            }
+        }
+       
+		p=p1;
+    }
+    while (p->next!=&t)
+    {
+        p=p->next;                                  
+    }
+    p->next=NULL;
+     for(i=0;i<25;i++)
+	{
+     Sleep(150);
+     printf(">>");
+	}
+     Sleep(1500);
+	 printf("\n整理完成。\n");
+	 printf("输入 0 返回主菜单。\n");
+	 scanf("%d",&back);
+	 system("cls");
+     return h.next;
+}

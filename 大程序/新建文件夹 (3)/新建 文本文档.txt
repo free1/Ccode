@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <windows.h>
+
+int main(void)
+{
+// 	int i,j;
+// 	char c;
+
+
+	char *stri1 = "°¢¹âÏ²»¶±ÈÇð¿¨Âð?";
+	char *stri2 = "°¢¹âÏ²»¶±È¿¨ÇðÂð?";
+	char stri3[50];
+//	char stri4[50];
+
+	scanf("%s",stri3);
+	lstrcmp(stri1,stri3);
+	if(!lstrcmp(stri1,stri3))
+	{
+		printf("shide");
+	}
+	else
+	{
+		printf("bu");
+	}
+	return 0;	
+}
+

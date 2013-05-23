@@ -1,0 +1,46 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ¡¥±Ì≈≈–Ú - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.PC-\LOCALS~1\Temp\RSP1D.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/¡¥±Ì≈≈–Ú.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"C:\Documents and Settings\Administrator.PC-201008131526\◊¿√Ê\¡¥±Ì≈≈–Ú\¡¥±Ì≈≈–Ú.cpp"
+"C:\Documents and Settings\Administrator.PC-201008131526\◊¿√Ê\¡¥±Ì≈≈–Ú\¡¥±Ì≈≈–Ú1.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\ADMINI~1.PC-\LOCALS~1\Temp\RSP1D.tmp"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.PC-\LOCALS~1\Temp\RSP1E.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/¡¥±Ì≈≈–Ú.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"C:\Documents and Settings\Administrator.PC-201008131526\◊¿√Ê\¡¥±Ì≈≈–Ú\StdAfx.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\ADMINI~1.PC-\LOCALS~1\Temp\RSP1E.tmp"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.PC-\LOCALS~1\Temp\RSP1F.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/¡¥±Ì≈≈–Ú.pdb" /debug /machine:I386 /out:"Debug/¡¥±Ì≈≈–Ú.exe" /pdbtype:sept 
+".\Debug\StdAfx.obj"
+".\Debug\¡¥±Ì≈≈–Ú.obj"
+".\Debug\¡¥±Ì≈≈–Ú1.obj"
+]
+Creating command line "link.exe @"C:\DOCUME~1\ADMINI~1.PC-\LOCALS~1\Temp\RSP1F.tmp""
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+¡¥±Ì≈≈–Ú.cpp
+¡¥±Ì≈≈–Ú1.cpp
+c:\documents and settings\administrator.pc-201008131526\◊¿√Ê\¡¥±Ì≈≈–Ú\¡¥±Ì≈≈–Ú1.cpp(72) : fatal error C1010: unexpected end of file while looking for precompiled header directive
+Generating Code...
+÷¥–– cl.exe  ±≥ˆ¥Ì.
+
+
+
+<h3>Results</h3>
+¡¥±Ì≈≈–Ú.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

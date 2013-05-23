@@ -1,0 +1,37 @@
+/*void compare(int array[], int n)
+{
+	int i;
+	max = min = array[0];
+
+	for( i = 0; i < n; i++ )
+	{
+		if( array[i] > max )
+		{
+			max = array[i];
+		}
+		else if( array[i] < min )
+		{
+			min = array[i];
+		}
+	}
+}*/
+
+
+
+void compare(int array[], int n)
+{
+	int *i , *array_end;
+	max = min = *array;
+
+	for( i = array+1; i < array+n; i++ )
+	{
+		if( *i > max )
+		{
+			max = *i;
+		}
+		else if( *i < min )
+		{
+			min = *i;
+		}
+	}
+}

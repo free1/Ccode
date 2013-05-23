@@ -1,0 +1,106 @@
+==========================
+ 功能：插入有序链表的某个节点的后面(从小到大)
+ 返回：指向链表表头的指针
+==========================
+*/
+
+/*
+有序链表插入节点示意图：
+
+---->[NULL]（空有序链表）
+head
+
+图18：空有序链表（空有序链表好解决，直接让head指向它就是了。）
+
+以下讨论不为空的有序链表。
+---->[1]---->[2]---->[3]...---->[n]---->[NULL]（有序链表）
+head   1->next  2->next  3->next   n->next
+
+图18：有N个节点的有序链表
+
+插入node节点的位置有两种情况：一是第一个节点前，二是其它节点前或后。
+
+---->[node]---->[1]---->[2]---->[3]...---->[n]---->[NULL]
+head  node->next  1->next  2->next  3->next   n->next
+
+图19：node节点插在第一个节点前
+
+---->[1]---->[2]---->[3]...---->[node]...---->[n]---->[NULL]
+head   1->next  2->next  3->next    node->next  n->next
+
+图20：node节点插在其它节点后
+*/
+struct student *SortInsert(struct student *head, struct student *node)
+{
+ struct student *p; /*p保存当前需要检查的节点的地址*/ 
+ struct student *t; /*临时指针变量*/
+
+ if (head == NULL) /*处理空的有序链表*/
+ {
+  head = node;
+  node->next = NULL;
+  n += 1; /*插入完毕，节点总数加1*/
+  return head;
+ } 
+
+ p = head; /*有序链表不为空*/
+ while (p->num < node->num && p != NULL) /*p指向的节点的学号比插入节点的学号小，并且它不等于NULL*/
+ {
+  t = p; /*保存当前节点的前驱，以便后面判断后处理*/
+  p = p->next; /*后移一个节点*/
+ }
+ 
+ 
+ if (p == head)  /*刚好插入第一个节点之前*/
+ {
+  node->next = p;
+  head = node;     
+ }
+ else /*插入其它节点之后*/
+ {  
+  t->next = node; /*把node节点加进去*/
+  node->next = p;  
+ }
+ n += 1; /*插入完毕，节点总数加1*/
+ 
+ return head;
+}
+
+/*
+
+测试代码如下：
+
+*/
+
+/*测试SelectSort():请编译时去掉注释块*/
+
+ /*
+ head = SelectSort(head);
+ Print(head);
+ */
+ 
+ /*测试InsertSort():请编译时去掉注释块*/
+
+ /*
+ head = InsertSort(head);
+ Print(head);
+ */
+
+ /*测试BubbleSort():请编译时去掉注释块*/
+
+ /*
+ head = BubbleSort(head);
+ Print(head);
+ */
+
+ /*测试SortInsert():上面创建链表，输入节点时请注意学号num从小到大的顺序。请编译时去掉注释块*/
+
+ /*
+ stu = (struct student *)malloc(LEN);
+ printf("\nPlease input insert node -- num,score: ");
+ scanf("%ld,%f",&stu->num,&stu->score);
+ head = SortInsert(head,stu);
+ free(stu);
+ stu = NULL;
+ Print(head);
+ */ 
